@@ -1,0 +1,26 @@
+# Materiale originale del cliente: troppo pesante per GitHub (limite 100 MB a file)
+*.step
+*.STEP
+*.stp
+*.mp4
+*.mov
+*.zip
+*.heic
+*.HEIC
+materiale/
+originali/
+
+# Modelli 3D intermedi (tenere solo i GLB finali in assets/model)
+*_raw.glb
+*_compatibile.glb
+
+# Sistema ed editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+node_modules/
+__pycache__/
+
+# Impostazioni personali di Claude Code
+.claude/settings.local.json

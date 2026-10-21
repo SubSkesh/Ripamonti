@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "eagle-1025.html"
+        ],
+        "createdAt": "2026-10-21T00:59:26.627Z",
+        "reason": "Claude: static false positive, insets come from .wrap padding and :not() selectors; verified in render at 1440/375/360"
+      }
+    ]
+  }
+}

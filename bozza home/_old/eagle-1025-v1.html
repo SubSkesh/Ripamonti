@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Eagle 1025 – Perforatrice idraulica cingolata | Ripamonti</title>
+<meta name="description" content="Eagle 1025: perforatrice idraulica cingolata per micropali e ancoraggi, 127 HP Stage V o elettrica 90 kW, completamente radiocomandata. Ripamonti, dal 1934.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ral7001:#8F999F; --ral7021:#2F3234; --black:#000; --white:#fff;
+  --mist:#E8EBEC; --line:#CDD2D5;
+  --bg:var(--white); --bg-alt:var(--mist); --text:var(--ral7021); --heading:var(--black);
+  --muted:#5E676C; --rule:var(--line); --panel:var(--ral7021); --panel-text:var(--white);
+  --focus:#000;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --wrap:1240px; --gut:clamp(20px,4vw,48px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#1B1D1E; --bg-alt:#24272A; --text:#D9DDDF; --heading:var(--white);
+    --muted:#9AA3A8; --rule:#3B4044; --panel:#111213; --focus:#fff;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#1B1D1E; --bg-alt:#24272A; --text:#D9DDDF; --heading:var(--white);
+  --muted:#9AA3A8; --rule:#3B4044; --panel:#111213; --focus:#fff;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);color:var(--heading);margin:0;line-height:1;font-weight:700}
+h2{font-size:clamp(34px,4.4vw,56px);letter-spacing:-.005em}
+h3{font-size:26px;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:32px;height:76px}
+.brand img{height:52px;width:auto}
+.brand .on-dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand .on-light{display:none}:root:not([data-theme="light"]) .brand .on-dark{display:block}}
+:root[data-theme="dark"] .brand .on-light{display:none}:root[data-theme="dark"] .brand .on-dark{display:block}
+.nav{display:flex;gap:26px;margin-left:auto;font-weight:500;font-size:16px}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current]{border-color:currentColor}
+.lang{display:flex;gap:2px;font:600 14px var(--body)}
+.lang button{background:none;border:1px solid var(--rule);color:var(--text);padding:5px 9px;cursor:pointer;font:inherit}
+.lang button[aria-pressed="true"]{background:var(--heading);color:var(--bg);border-color:var(--heading)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px var(--body);text-decoration:none;padding:13px 22px;border:2px solid var(--heading);background:var(--heading);color:var(--bg);cursor:pointer}
+.btn:hover{background:transparent;color:var(--heading)}
+.btn.ghost{background:transparent;color:var(--heading)}
+.btn.ghost:hover{background:var(--heading);color:var(--bg)}
+.menu-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--rule);color:var(--text);font:600 15px var(--body);padding:8px 12px}
+@media (max-width:1020px){
+  .nav,.top .btn{display:none}
+  .menu-toggle{display:block}
+  .top.open .nav{display:flex;position:absolute;left:0;right:0;top:76px;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--rule);padding:8px var(--gut) 16px}
+  .top.open .nav a{padding:12px 0;border-bottom:1px solid var(--rule)}
+}
+
+/* breadcrumb */
+.crumbs{font-size:14px;color:var(--muted);padding:18px 0 0}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs li+li::before{content:"/";margin-right:6px;color:var(--rule)}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+
+/* hero */
+.hero{padding:28px 0 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:end}
+.kind{font:500 20px var(--body);color:var(--muted);margin:0 0 10px}
+.model{font-family:var(--display);font-weight:800;color:var(--heading);line-height:.82;letter-spacing:-.02em;margin:0;font-size:clamp(84px,15vw,212px)}
+.model span{display:block;color:var(--ral7001);-webkit-text-stroke:0}
+.lead{font-size:20px;line-height:1.5;margin:28px 0 30px;max-width:46ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
+.hero-photo{position:relative;margin:0;align-self:stretch;min-height:420px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;background:var(--bg);color:var(--muted);font-size:13px;padding:6px 12px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--heading);margin-top:48px}
+.stat{display:flex;gap:16px;align-items:center;padding:22px 20px 22px 0}
+.stat+.stat{border-left:1px solid var(--rule);padding-left:22px}
+.ico{flex:none;width:52px;height:52px;background:var(--heading);-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
+.stat b{display:block;font:700 32px/1 var(--display);color:var(--heading);white-space:nowrap}
+.stat small{display:block;font-size:14px;color:var(--muted);margin-top:4px;line-height:1.3}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-photo{min-height:0;aspect-ratio:4/3}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--rule)}
+}
+@media (max-width:560px){
+  .stat{flex-direction:column;align-items:flex-start;gap:10px}
+  .ico{width:40px;height:40px}
+  .stat b{font-size:28px}
+}
+
+/* 3d */
+.viewer{background:var(--panel);color:var(--panel-text);margin-top:72px;position:relative;overflow:hidden}
+.viewer::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(143,153,159,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(143,153,159,.13) 1px,transparent 1px);
+  background-size:48px 48px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+.viewer .wrap{position:relative;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px;padding-top:64px;padding-bottom:40px}
+.viewer h2{color:var(--white)}
+.viewer p{color:#C9CED1;margin-top:18px}
+.viewer-copy{align-self:center}
+.viewer-copy ul{list-style:none;padding:0;margin:24px 0 0;border-top:1px solid rgba(255,255,255,.18)}
+.viewer-copy li{border-bottom:1px solid rgba(255,255,255,.18)}
+.viewer-copy li button{all:unset;box-sizing:border-box;display:flex;justify-content:space-between;gap:12px;width:100%;padding:12px 0;cursor:pointer;font-size:16px}
+.viewer-copy li button span{color:var(--ral7001)}
+.viewer-copy li button:hover,.viewer-copy li button[aria-pressed="true"]{color:var(--white)}
+.viewer-copy li button[aria-pressed="true"] span{color:var(--white)}
+.viewer-copy li button:focus-visible{outline:2px solid var(--white);outline-offset:2px}
+model-viewer{width:100%;height:clamp(380px,58vw,620px);background:transparent;--poster-color:transparent;--progress-bar-color:var(--ral7001)}
+.hs{all:unset;display:block;width:14px;height:14px;border-radius:50%;background:var(--white);box-shadow:0 0 0 5px rgba(255,255,255,.22);cursor:pointer;position:relative}
+.hs .tag{display:none;position:absolute;left:22px;top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--white);color:var(--black);font:600 14px/1 var(--body);padding:7px 10px;pointer-events:none}
+.hs .tag b{display:block;font:700 19px/1.05 var(--display);margin-top:3px}
+.hs:hover .tag,.hs:focus-visible .tag,.hs.active .tag{display:block}
+.hs.active{background:var(--white);box-shadow:0 0 0 7px rgba(255,255,255,.35)}
+.hs[data-visible=false]{opacity:0}
+model-viewer::part(default-progress-bar){display:none}
+.hs:focus-visible{outline:2px solid var(--white);outline-offset:4px}
+.viewer-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:14px;color:#AEB5B9;margin-top:6px}
+.viewer-tools button{background:none;border:1px solid rgba(255,255,255,.35);color:var(--white);font:500 14px var(--body);padding:7px 12px;cursor:pointer}
+.viewer-tools button:hover{border-color:var(--white)}
+@media (max-width:900px){.viewer .wrap{grid-template-columns:1fr}}
+
+/* sections */
+.section{padding:96px 0}
+.section.alt{background:var(--bg-alt)}
+.head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:end;margin-bottom:40px}
+.head p{color:var(--muted);margin:0}
+@media (max-width:800px){.head{grid-template-columns:1fr}.section{padding:72px 0}}
+
+/* tabs + table */
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:2px solid var(--heading)}
+.tabs button{background:none;border:0;border-bottom:4px solid transparent;margin-bottom:-2px;padding:12px 18px 10px 0;margin-right:18px;font:600 22px var(--display);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--heading);border-color:var(--heading)}
+.spec{width:100%;border-collapse:collapse;font-size:17px}
+.spec th,.spec td{text-align:left;vertical-align:top;padding:16px 0;border-bottom:1px solid var(--rule)}
+.spec th{width:30%;font-weight:600;color:var(--heading);padding-right:24px}
+.spec td ul{margin:0;padding-left:18px}
+.spec td small{color:var(--muted)}
+.table-scroll{overflow-x:auto}
+[role=tabpanel][hidden]{display:none}
+
+/* slitta */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px);align-items:start}
+.patent{display:inline-block;border:1px solid var(--heading);color:var(--heading);font-weight:600;font-size:14px;padding:4px 10px;margin-bottom:18px}
+.vs{width:100%;border-collapse:collapse;font-size:16px;margin-top:8px}
+.vs th,.vs td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--rule)}
+.vs th:first-child,.vs td:first-child{text-align:left}
+.vs thead th{font-weight:600;color:var(--muted);font-size:14px}
+.vs tbody td:first-child{font:700 22px var(--display);color:var(--heading)}
+.drawing{background:var(--white);padding:16px;border:1px solid var(--rule)}
+.drawing img{width:100%;height:auto}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+/* controls */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--heading)}
+.trio article{padding:28px 28px 8px 0}
+.trio article+article{border-left:1px solid var(--rule);padding-left:28px}
+.trio h3{margin-bottom:12px}
+.trio p{font-size:16px}
+@media (max-width:800px){.trio{grid-template-columns:1fr}.trio article+article{border-left:0;padding-left:0;border-top:1px solid var(--rule)}}
+
+/* dimensions */
+.dims{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+.dims figure{margin:0}
+.dims figure.wide{grid-column:1/-1}
+.dims figcaption{font-weight:600;color:var(--heading);margin:12px 0 0}
+.keydims{display:flex;flex-wrap:wrap;gap:40px;margin:0 0 36px;padding:0;list-style:none}
+.keydims b{display:block;font:700 40px/1 var(--display);color:var(--heading)}
+.keydims span{font-size:14px;color:var(--muted)}
+@media (max-width:800px){.dims{grid-template-columns:1fr}}
+
+/* video + gallery */
+.video{position:relative;aspect-ratio:16/9;background:var(--ral7021);overflow:hidden}
+.video button{all:unset;position:absolute;inset:0;cursor:pointer;display:grid;place-items:center;background:center/cover no-repeat var(--thumb),var(--ral7021)}
+.video button::after{content:"";width:84px;height:84px;border-radius:50%;background:var(--white);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.video button::before{content:"";position:absolute;left:50%;top:50%;transform:translate(-30%,-50%);border-left:26px solid var(--black);border-top:16px solid transparent;border-bottom:16px solid transparent;z-index:1}
+.video button:focus-visible{outline:3px solid var(--white);outline-offset:-6px}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:12px}
+.gallery button{all:unset;cursor:zoom-in;display:block;overflow:hidden;aspect-ratio:3/4;background:var(--bg-alt)}
+.gallery button:first-child{aspect-ratio:auto}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:700px){.gallery{grid-template-columns:1fr 1fr}.gallery button:first-child{grid-column:1/-1;aspect-ratio:4/3}}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(94vw,1400px)}
+dialog.lb::backdrop{background:rgba(0,0,0,.88)}
+dialog.lb img{max-height:88vh;width:auto;margin:0 auto}
+dialog.lb button{position:fixed;top:calc(env(safe-area-inset-top,0px) + 16px);right:16px;background:var(--white);color:var(--black);border:0;font:600 15px var(--body);padding:8px 14px;cursor:pointer}
+
+/* contact */
+.contact{background:var(--panel);color:var(--panel-text)}
+.contact h2{color:var(--white)}
+.contact p{color:#C9CED1}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form label{display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:#DDE1E3}
+.form input,.form textarea,.form select{width:100%;background:transparent;border:1px solid rgba(255,255,255,.4);color:var(--white);font:400 16px var(--body);padding:12px}
+.form input:focus,.form textarea:focus,.form select:focus{outline:2px solid var(--white);outline-offset:0;border-color:var(--white)}
+.form .full{grid-column:1/-1}
+.form .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#C9CED1}
+.form .check input{width:auto;margin-top:4px}
+.contact .btn{background:var(--white);color:var(--black);border-color:var(--white)}
+.contact .btn:hover{background:transparent;color:var(--white)}
+.form-msg{grid-column:1/-1;font-size:15px;color:var(--white);min-height:1.5em}
+@media (max-width:700px){.form{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--black);color:#C9CED1;font-size:15px;padding:56px 0 32px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px}
+footer img{height:56px;width:auto;margin-bottom:16px}
+footer h3{font:600 20px var(--display);color:var(--white);margin-bottom:12px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:0 0 6px}
+footer a{text-decoration:none}footer a:hover{text-decoration:underline;color:var(--white)}
+.legal{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #2F3234;padding-top:20px;margin-top:16px;font-size:13px;color:#8F999F}
+@media (max-width:900px){footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){footer .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Ripamonti, home">
+      <img class="on-light" src="assets/img/logo-ripamonti-nero.png" alt="Ripamonti">
+      <img class="on-dark" src="assets/img/logo-ripamonti-bianco.png" alt="">
+    </a>
+    <nav class="nav" aria-label="Menu principale">
+      <a href="#" aria-current="page">Prodotti</a>
+      <a href="#">Noleggio e servizi</a>
+      <a href="#">Azienda</a>
+      <a href="#">Rete vendita</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Lingua">
+      <button type="button" aria-pressed="true">IT</button>
+      <button type="button" aria-pressed="false" title="Versione inglese prevista nel sito definitivo">EN</button>
+    </div>
+    <a class="btn" href="#contatti">Richiedi informazioni</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="top">Menu</button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap crumbs">
+    <nav aria-label="Percorso">
+      <ol>
+        <li><a href="#">Prodotti</a></li>
+        <li><a href="#">Micropali e ancoraggi</a></li>
+        <li aria-current="page">Eagle 1025</li>
+      </ol>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kind">Perforatrice idraulica cingolata</p>
+          <h1 class="model">Eagle<span>1025</span></h1>
+          <p class="lead">Per micropali, ancoraggi e consolidamenti. Lavora con martelli a roto-percussione e fondo-foro ed è completamente radiocomandata: spostamento, posizionamento e perforazione.</p>
+          <div class="actions">
+            <a class="btn" href="#contatti">Richiedi informazioni</a>
+            <a class="btn ghost" href="assets/doc/Eagle-1025-scheda-tecnica.pdf" download>Scarica la scheda tecnica (PDF)</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/img/eagle-cantiere.jpg" alt="Eagle 1025 al lavoro in cantiere con il braccio esteso" fetchpriority="high">
+          <figcaption>Eagle 1025 in cantiere</figcaption>
+        </figure>
+      </div>
+
+      <div class="stats" aria-label="Dati principali">
+        <div class="stat"><span class="ico" style="--i:url(assets/img/ico-motore.png)" aria-hidden="true"></span><div><b>127 HP</b><small>Motore Kubota Stage V</small></div></div>
+        <div class="stat"><span class="ico" style="--i:url(assets/img/ico-elettrico.png)" aria-hidden="true"></span><div><b>90 kW</b><small>Versione elettrica</small></div></div>
+        <div class="stat"><span class="ico" style="--i:url(assets/img/ico-peso.png)" aria-hidden="true"></span><div><b>8,5–9,5 t</b><small>Peso, secondo gli accessori</small></div></div>
+        <div class="stat"><span class="ico" style="--i:url(assets/img/ico-tiro.png)" aria-hidden="true"></span><div><b>6.500 kg</b><small>Tiro e spinta</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="viewer" aria-labelledby="t3d">
+    <div class="wrap">
+      <div class="viewer-copy">
+        <h2 id="t3d">Guardala da ogni lato</h2>
+        <p>Ruota il modello, avvicinati ai dettagli e scegli un punto dall’elenco per vederlo sulla macchina.</p>
+        <ul id="hs-list">
+          <li><button type="button" data-hs="hs-mast" aria-pressed="false">Mast S323 <span>corsa 3500 mm</span></button></li>
+          <li><button type="button" data-hs="hs-head" aria-pressed="false">Testa di rotazione <span>RP800 / RH12X</span></button></li>
+          <li><button type="button" data-hs="hs-clamp" aria-pressed="false">Morsa svitatrice <span>40–180 / 50–250</span></button></li>
+          <li><button type="button" data-hs="hs-track" aria-pressed="false">Cingoli <span>carreggiata 1400–2000 mm</span></button></li>
+          <li><button type="button" data-hs="hs-stab" aria-pressed="false">Stabilizzatori frontali <span>orientabili</span></button></li>
+          <li><button type="button" data-hs="hs-panel" aria-pressed="false">Quadro comandi <span>display LCD 7″</span></button></li>
+        </ul>
+      </div>
+      <div>
+        <model-viewer id="mv" src="assets/model/eagle-1025.glb" alt="Modello 3D della Eagle 1025" camera-controls touch-action="pan-y" auto-rotate auto-rotate-delay="2500" rotation-per-second="12deg" interaction-prompt="none" shadow-intensity="1" shadow-softness=".8" exposure="0.8" environment-image="neutral" camera-orbit="35deg 72deg 95%" min-camera-orbit="auto 20deg auto" max-camera-orbit="auto 95deg auto" interpolation-decay="120">
+          <button class="hs" slot="hotspot-mast" id="hs-mast" data-position="1.6m 3.52m 1.86m" data-normal="0m 1m 0m"><span class="tag">Mast S323<b>Corsa 3500 mm</b></span></button>
+          <button class="hs" slot="hotspot-head" id="hs-head" data-position="-0.05m 3.56m 1.58m" data-normal="0m 1m 0m"><span class="tag">Testa di rotazione<b>RP800 / RH12X</b></span></button>
+          <button class="hs" slot="hotspot-clamp" id="hs-clamp" data-position="-0.68m 3.5m 1.6m" data-normal="-1m 0m 0m"><span class="tag">Morsa svitatrice<b>40–180 / 50–250</b></span></button>
+          <button class="hs" slot="hotspot-track" id="hs-track" data-position="2.3m 1.3m 2.57m" data-normal="0m 0m 1m"><span class="tag">Cingoli<b>1400–2000 mm</b></span></button>
+          <button class="hs" slot="hotspot-stab" id="hs-stab" data-position="0.45m 1.1m 2.25m" data-normal="0m 0m 1m"><span class="tag">Stabilizzatori frontali<b>Orientabili</b></span></button>
+          <button class="hs" slot="hotspot-panel" id="hs-panel" data-position="2.88m 2.25m 2.21m" data-normal="0m 0m 1m"><span class="tag">Quadro comandi<b>LCD 7″</b></span></button>
+        </model-viewer>
+        <div class="viewer-tools">
+          <button type="button" id="mv-reset">Torna alla vista iniziale</button>
+          <button type="button" id="mv-spin" aria-pressed="true">Ferma la rotazione</button>
+          <span>Modello in posizione di trasporto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tdati">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="tdati">Dati tecnici</h2>
+        <p>Gli stessi dati della scheda tecnica, consultabili qui. Per configurazioni diverse da quelle indicate, scrivici.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Dati tecnici">
+        <button role="tab" id="tab-a" aria-controls="p-a" aria-selected="true">Specifiche</button>
+        <button role="tab" id="tab-b" aria-controls="p-b" aria-selected="false" tabindex="-1">Accessori</button>
+        <button role="tab" id="tab-c" aria-controls="p-c" aria-selected="false" tabindex="-1">Teste di rotazione</button>
+        <button role="tab" id="tab-d" aria-controls="p-d" aria-selected="false" tabindex="-1">Gabbia di sicurezza</button>
+      </div>
+      <div class="table-scroll" role="tabpanel" id="p-a" aria-labelledby="tab-a" tabindex="0">
+        <table class="spec">
+          <tr><th scope="row">Motore</th><td>Kubota V3800 Stage V, 127 HP<br><small>In alternativa: elettrico 90 kW</small></td></tr>
+          <tr><th scope="row">Cingoli</th><td>Carreggiata variabile 1400–2000 mm, suole in acciaio da 300 mm</td></tr>
+          <tr><th scope="row">Colonna di perforazione</th><td>S323 con motoriduttore</td></tr>
+          <tr><th scope="row">Corsa</th><td>3500 mm standard, altre su richiesta</td></tr>
+          <tr><th scope="row">Tiro e spinta</th><td>6.500 kg</td></tr>
+          <tr><th scope="row">Peso</th><td>8,5–9,5 t, a seconda degli accessori</td></tr>
+          <tr><th scope="row">Cinematica</th><td><ul><li>Rotazione laterale del braccio ±90°</li><li>Rotazione della colonna 180° + 180°</li><li>Controslitta 850 mm</li><li>Zoom 600 mm</li><li>2 stabilizzatori frontali orientabili idraulicamente, 2 posteriori</li></ul></td></tr>
+          <tr><th scope="row">Idraulica</th><td>Pompa a pistoni a portata variabile, portata massima 250 l/min, pressione massima 200 bar</td></tr>
+          <tr><th scope="row">Comandi</th><td>Radiocomando e quadro con display LCD 7″ per controllo e diagnostica</td></tr>
+          <tr><th scope="row">Data log</th><td>Su richiesta</td></tr>
+        </table>
+      </div>
+      <div class="table-scroll" role="tabpanel" id="p-b" aria-labelledby="tab-b" tabindex="0" hidden>
+        <table class="spec">
+          <tr><th scope="row">Morsa svitatrice</th><td>40–180, 50–250, 50–250 con estrattore</td></tr>
+          <tr><th scope="row">Slidramatic</th><td>Spostamento laterale della testa</td></tr>
+          <tr><th scope="row">Argano</th><td>800 kg con falchetto</td></tr>
+          <tr><th scope="row">Pompa acqua</th><td>30 l a 160 bar</td></tr>
+          <tr><th scope="row">Lubrificatore</th><td>Da 1 l a 8 l</td></tr>
+        </table>
+      </div>
+      <div class="table-scroll" role="tabpanel" id="p-c" aria-labelledby="tab-c" tabindex="0" hidden>
+        <table class="spec">
+          <tr><th scope="row">Teste di rotazione</th><td>RP800, RH12X</td></tr>
+          <tr><th scope="row">Perforatrici per ancoraggio</th><td><ul><li>Eurodrill RH6X, RH10X, RH12X</li><li>Kit albero ammortizzato per fondo-foro</li></ul></td></tr>
+          <tr><th scope="row">Altre</th><td>Disponibili su richiesta</td></tr>
+        </table>
+      </div>
+      <div class="table-scroll" role="tabpanel" id="p-d" aria-labelledby="tab-d" tabindex="0" hidden>
+        <table class="spec">
+          <tr><th scope="row">Manuale</th><td>Apertura manuale</td></tr>
+          <tr><th scope="row">Idraulica</th><td>Telescopica</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="tvs">
+    <div class="wrap split">
+      <div>
+        <span class="patent">Brevetto in corso</span>
+        <h2 id="tvs">Slitta telescopica S300VS</h2>
+        <p style="margin-top:20px">La corsa del mast si adatta al lavoro: la slitta si allunga quando serve perforare in profondità e si accorcia per entrare in spazi stretti, senza cambiare macchina.</p>
+        <table class="vs">
+          <caption class="sr">Misure della slitta S300VS per cilindro</caption>
+          <thead><tr><th scope="col">Cilindro</th><th scope="col">L min</th><th scope="col">L max</th><th scope="col">Corsa min</th><th scope="col">Corsa max</th></tr></thead>
+          <tbody>
+            <tr><td>700</td><td>2200</td><td>2900</td><td>750</td><td>1450</td></tr>
+            <tr><td>1100</td><td>2600</td><td>3700</td><td>1150</td><td>2250</td></tr>
+            <tr><td>1600</td><td>3100</td><td>4700</td><td>1650</td><td>3250</td></tr>
+            <tr><td>2100</td><td>3600</td><td>5700</td><td>2150</td><td>4250</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Misure in millimetri.</p>
+      </div>
+      <figure class="drawing" style="margin:0">
+        <img src="assets/img/dim-corse.png" alt="Disegno delle corse del mast: slitta VS 300 con le quattro lunghezze e mast S323 con corsa 3500 mm" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tcmd">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="tcmd">Comandi e dati di lavoro</h2>
+        <p>Si guida a distanza e tiene traccia di ogni perforazione.</p>
+      </div>
+      <div class="trio">
+        <article>
+          <h3>Radiocomando</h3>
+          <p>Ogni funzione è radiocomandata: spostamento sui cingoli, posizionamento del mast e perforazione. L’operatore lavora a distanza di sicurezza, dove vede meglio il foro.</p>
+        </article>
+        <article>
+          <h3>Data log</h3>
+          <p>Registra i parametri di perforazione di ogni foro, utili per la documentazione di cantiere e il controllo della qualità.</p>
+        </article>
+        <article>
+          <h3>Machine Hub</h3>
+          <p>I dati della macchina in tempo reale, direttamente nel browser dello smartphone: senza display aggiuntivi, cavi o connessione internet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="tdim">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="tdim">Dimensioni e movimenti</h2>
+        <p>Le misure in posizione di trasporto e l’area che la macchina copre senza spostarsi.</p>
+      </div>
+      <ul class="keydims">
+        <li><b>6050 mm</b><span>Lunghezza di trasporto</span></li>
+        <li><b>2600 mm</b><span>Altezza di trasporto</span></li>
+        <li><b>1400–2000 mm</b><span>Larghezza, cingoli chiusi e aperti</span></li>
+        <li><b>4000 mm</b><span>Altezza massima di lavoro</span></li>
+      </ul>
+      <div class="dims">
+        <figure class="drawing"><img src="assets/img/dim-trasporto.png" alt="Disegno della Eagle 1025 in posizione di trasporto con le quote" loading="lazy"><figcaption>Posizione di trasporto</figcaption></figure>
+        <figure class="drawing"><img src="assets/img/dim-cinematica.png" alt="Disegno della cinematica del braccio con gli angoli di lavoro" loading="lazy"><figcaption>Cinematica</figcaption></figure>
+        <figure class="drawing wide"><img src="assets/img/dim-area.png" alt="Disegni dell’area di perforazione frontale e laterale" loading="lazy"><figcaption>Area di perforazione</figcaption></figure>
+      </div>
+      <p class="note">Le dimensioni reali possono differire da quelle riportate nei disegni.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tvid">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="tvid">In cantiere</h2>
+        <p>La Eagle 1025 al lavoro e in officina a Ornavasso.</p>
+      </div>
+      <div class="video" style="--thumb:url(https://i.ytimg.com/vi/2tXp29r9E5I/maxresdefault.jpg)">
+        <button type="button" id="play" aria-label="Guarda il video della Eagle 1025"></button>
+      </div>
+      <div class="gallery">
+        <button type="button" data-full="assets/img/eagle-lato.jpg"><img src="assets/img/eagle-lato.jpg" alt="Eagle 1025 vista di lato in officina" loading="lazy"></button>
+        <button type="button" data-full="assets/img/eagle-fronte.jpg"><img src="assets/img/eagle-fronte.jpg" alt="Eagle 1025 vista di fronte con stabilizzatori e gabbia di sicurezza" loading="lazy"></button>
+        <button type="button" data-full="assets/img/eagle-piazzale.jpg"><img src="assets/img/eagle-piazzale.jpg" alt="Eagle 1025 vista da dietro nel piazzale" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contatti" aria-labelledby="tform">
+    <div class="wrap split">
+      <div>
+        <h2 id="tform">Configuriamo la Eagle 1025 per il tuo cantiere</h2>
+        <p style="margin-top:20px">Dicci che lavoro devi fare: ti proponiamo mast, testa e accessori adatti e ti inviamo un’offerta.</p>
+        <p>Ripamonti Dr. Gianni Srl<br>Strada Romana di Sotto 27, 28877 Ornavasso (VB)<br><a href="tel:+390323838211">0323 838211</a> – <a href="mailto:info@ripamonti.net">info@ripamonti.net</a></p>
+      </div>
+      <form class="form" id="form" novalidate>
+        <div><label for="f-nome">Nome e cognome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+        <div><label for="f-az">Azienda</label><input id="f-az" name="azienda" autocomplete="organization"></div>
+        <div><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="f-tel">Telefono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="f-msg">Che lavoro devi fare?</label><textarea id="f-msg" name="messaggio" rows="4">Vorrei informazioni sulla Eagle 1025.</textarea></div>
+        <label class="check full"><input type="checkbox" required> Ho letto l’informativa privacy e acconsento al trattamento dei dati per ricevere una risposta.</label>
+        <div class="full"><button class="btn" type="submit">Invia la richiesta</button></div>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="assets/img/logo-ripamonti-bianco.png" alt="Ripamonti">
+      <p>Macchine e attrezzature per la perforazione.<br>Made in Italy, dal 1934.</p>
+    </div>
+    <div>
+      <h3>Prodotti</h3>
+      <ul>
+        <li><a href="#">Micropali e ancoraggi</a></li>
+        <li><a href="#">Perforatrici per pareti</a></li>
+        <li><a href="#">Geotermia</a></li>
+        <li><a href="#">Perforatrici su escavatore</a></li>
+        <li><a href="#">Attrezzature per escavatore</a></li>
+        <li><a href="#">Kit per gru</a></li>
+        <li><a href="#">Cave di pietra</a></li>
+        <li><a href="#">Applicazioni speciali</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Azienda</h3>
+      <ul>
+        <li><a href="#">Chi siamo</a></li>
+        <li><a href="#">Noleggio e servizi</a></li>
+        <li><a href="#">Rete vendita</a></li>
+        <li><a href="#">News e fiere</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contatti</h3>
+      <ul>
+        <li>Strada Romana di Sotto 27<br>28877 Ornavasso (VB)</li>
+        <li><a href="tel:+390323838211">0323 838211</a></li>
+        <li><a href="mailto:info@ripamonti.net">info@ripamonti.net</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>© 2026 Ripamonti Dr. Gianni Srl</span>
+      <span><a href="#">Privacy</a> – <a href="#">Cookie</a></span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb"><button type="button" id="lb-close">Chiudi</button><img alt=""></dialog>
+
+<script>
+self.ModelViewerElement = self.ModelViewerElement || {};
+self.ModelViewerElement.meshoptDecoderLocation = 'assets/js/meshopt_decoder.js';
+</script>
+<script type="module" src="assets/js/model-viewer.min.js"></script>
+<script>
+(function(){
+  // mobile menu
+  var top=document.getElementById('top'), mt=document.querySelector('.menu-toggle');
+  mt.addEventListener('click',function(){var o=top.classList.toggle('open');mt.setAttribute('aria-expanded',o)});
+
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;var n=tabs[(i+d+tabs.length)%tabs.length];sel(n);n.focus()});
+  });
+
+  // 3D viewer
+  var mv=document.getElementById('mv'), spin=document.getElementById('mv-spin');
+  var start={orbit:'35deg 72deg 95%',target:'auto auto auto'};
+  document.getElementById('mv-reset').addEventListener('click',function(){mv.cameraOrbit=start.orbit;mv.cameraTarget=start.target;mv.fieldOfView='auto';clearActive()});
+  spin.addEventListener('click',function(){var on=!mv.autoRotate;mv.autoRotate=on;spin.setAttribute('aria-pressed',on);spin.textContent=on?'Ferma la rotazione':'Fai ruotare'});
+  var listBtns=[].slice.call(document.querySelectorAll('#hs-list button'));
+  function clearActive(){listBtns.forEach(function(b){b.setAttribute('aria-pressed','false')});[].forEach.call(document.querySelectorAll('.hs'),function(h){h.classList.remove('active')})}
+  function focusHs(id){
+    var h=document.getElementById(id); if(!h)return;
+    clearActive(); h.classList.add('active');
+    listBtns.forEach(function(b){if(b.dataset.hs===id)b.setAttribute('aria-pressed','true')});
+    var p=h.dataset.position.replace(/m/g,'').split(' ').map(Number);
+    mv.autoRotate=false; spin.setAttribute('aria-pressed','false'); spin.textContent='Fai ruotare';
+    mv.cameraTarget=p[0]+'m '+p[1]+'m '+p[2]+'m';
+    mv.cameraOrbit=(id==='hs-clamp'?'-60deg':id==='hs-head'||id==='hs-mast'?'20deg':'15deg')+' 70deg 4.5m';
+  }
+  listBtns.forEach(function(b){b.addEventListener('click',function(){focusHs(b.dataset.hs)})});
+  [].forEach.call(document.querySelectorAll('.hs'),function(h){h.addEventListener('click',function(){focusHs(h.id)})});
+
+  // video (loads YouTube only on click)
+  var play=document.getElementById('play');
+  play.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/2tXp29r9E5I?autoplay=1&rel=0';
+    f.title='Video Eagle 1025'; f.allow='autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen=true;
+    play.replaceWith(f);
+  });
+
+  // gallery lightbox
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  [].forEach.call(document.querySelectorAll('.gallery button'),function(b){b.addEventListener('click',function(){lbi.src=b.dataset.full;lbi.alt=b.querySelector('img').alt;lb.showModal()})});
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+
+  // form (draft: no data sent)
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var m=document.getElementById('form-msg'), f=e.target;
+    if(!f.checkValidity()){m.textContent='Compila nome, email e consenso privacy per inviare la richiesta.';return}
+    m.textContent='Richiesta inviata. Nella bozza il modulo non trasmette dati: nel sito definitivo arriverà a info@ripamonti.net.';
+  });
+})();
+</script>
+</body>
+</html>
