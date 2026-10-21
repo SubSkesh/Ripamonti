@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ripamonti – Perforatrici e attrezzature per roccia, fondazioni e cave</title>
+<meta name="description" content="Ripamonti progetta e costruisce a Ornavasso perforatrici per micropali, ancoraggi, pareti di roccia, geotermia e cave di pietra. Dal 1934.">
+<link rel="preload" href="assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* hero */
+.hero{position:relative;background:var(--black);color:var(--white);min-height:min(88vh,860px);display:flex;flex-direction:column;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.62) 38%,rgba(0,0,0,.08) 72%),linear-gradient(0deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.84) 16%,rgba(0,0,0,.4) 30%,transparent 44%)}
+.hero .wrap{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:flex-end;width:100%;padding-top:96px}
+.hero h1{color:var(--white);text-transform:uppercase;font-weight:800;font-size:clamp(50px,7.4vw,112px);line-height:.9;letter-spacing:-.01em;max-width:11ch}
+.hero .sub{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:#D3D8DB;max-width:44ch;margin:28px 0 34px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+.facts{list-style:none;margin:64px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.28)}
+.facts li{padding:20px 24px 30px 0}
+.facts li+li{padding-left:24px;border-left:1px solid rgba(255,255,255,.18)}
+.facts b{display:block;font:700 40px/1 var(--display);color:var(--white)}
+.facts span{display:block;font-size:15px;color:#B9C0C4;margin-top:6px;line-height:1.35}
+@media (max-width:800px){
+  .hero>img{object-position:70% 40%}
+  .hero::before{background:linear-gradient(0deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.88) 38%,rgba(0,0,0,.6) 60%,rgba(0,0,0,.3) 100%)}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts li:nth-child(3){padding-left:0;border-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
+}
+
+/* sections */
+.sec{padding:110px 0}
+.sec.alt{background:var(--bg-alt)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 48px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(40px,5vw,68px);text-transform:uppercase;font-weight:800;letter-spacing:-.005em}
+.sec-head p{color:var(--muted);margin:0;max-width:46ch}
+@media (max-width:800px){.sec{padding:76px 0}}
+
+/* product lines */
+.lines{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.lines a{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;text-decoration:none;background:var(--ral7021);color:var(--white)}
+.lines img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.lines a::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,0) 70%)}
+.lines .txt{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 22px 20px}
+.lines b{display:block;font:700 30px/1 var(--display);text-transform:uppercase;letter-spacing:.005em}
+.lines small{display:block;font-size:15px;color:#C9CED1;margin-top:8px;line-height:1.35}
+.lines .models{display:block;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.25);font-size:14px;font-weight:600;color:var(--white)}
+.lines a:hover img,.lines a:focus-visible img{transform:scale(1.045)}
+.lines a:focus-visible{outline-offset:3px}
+@media (max-width:1000px){.lines{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.lines{grid-template-columns:1fr}.lines a{aspect-ratio:4/3}}
+
+/* featured */
+.feature{background:var(--panel);color:#C9CED1}
+.feature .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:0;padding:0;max-width:none}
+.feature figure{margin:0;min-height:560px}
+.feature figure img{width:100%;height:100%;object-fit:cover}
+.feature .copy{padding:72px max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut))) 72px clamp(28px,4vw,64px);max-width:calc(var(--wrap)*5/12 + 200px)}
+.badge{display:inline-block;background:var(--white);color:var(--black);font:700 15px var(--body);padding:5px 20px 5px 12px;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%);margin-bottom:22px}
+.feature h2{color:var(--white);font-size:clamp(56px,6vw,88px);text-transform:uppercase;font-weight:800}
+.feature .kind{font-size:19px;color:var(--white);margin:12px 0 18px}
+.kpis{list-style:none;margin:28px 0 34px;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.2)}
+.kpis li{display:flex;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.kpis li:nth-child(odd){padding-right:16px}
+.kpis li:nth-child(even){padding-left:16px;border-left:1px solid rgba(255,255,255,.2)}
+.kpis .ico{flex:none;width:40px;height:40px;background:var(--white);-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
+.kpis b{display:block;font:700 26px/1 var(--display);color:var(--white);white-space:nowrap}
+.kpis small{font-size:13px}
+.feature .actions{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:960px){
+  .feature .wrap{grid-template-columns:1fr}
+  .feature figure{min-height:0;aspect-ratio:4/3}
+  .feature .copy{padding:48px var(--gut) 64px;max-width:none}
+}
+
+/* services */
+.services{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:center}
+.services figure{margin:0;position:relative}
+.services figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:35% 50%}
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--heading)}
+.svc li{padding:26px 28px 24px 0;border-bottom:1px solid var(--rule)}
+.svc li:nth-child(even){padding:26px 0 24px 28px;border-left:1px solid var(--rule)}
+.svc h3{font-size:27px;font-weight:700;margin-bottom:10px}
+.svc p{font-size:16px;margin:0;color:var(--text)}
+.services .more{margin-top:32px}
+@media (max-width:900px){.services{grid-template-columns:1fr}.services figure img{aspect-ratio:16/10}}
+@media (max-width:600px){.svc{grid-template-columns:1fr}.svc li:nth-child(even){padding:26px 0 24px;border-left:0}}
+
+/* history */
+.history{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,80px)}
+.history figure{margin:0}
+.history figure img{width:100%;height:100%;max-height:720px;object-fit:cover}
+.history h2{font-size:clamp(40px,5vw,68px);text-transform:uppercase;font-weight:800;margin-bottom:24px}
+.timeline{list-style:none;margin:36px 0 36px;padding:0;border-left:2px solid var(--heading)}
+.timeline li{position:relative;padding:0 0 30px 32px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;background:var(--bg);border:2px solid var(--heading)}
+.timeline li:last-child::before{background:var(--heading)}
+.timeline b{display:block;font:700 34px/1 var(--display);color:var(--heading);margin-bottom:6px}
+.timeline p{margin:0}
+@media (max-width:900px){.history{grid-template-columns:1fr}.history figure img{aspect-ratio:4/3;height:auto}}
+
+/* brands */
+.brands{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:36px 0}
+.brands .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:18px 44px}
+.brands h2{font:600 17px var(--body);color:var(--muted);margin-right:12px}
+.brands ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 40px}
+.brands li{font:700 26px/1 var(--display);color:var(--ral7001);text-transform:uppercase;letter-spacing:.03em}
+
+/* contact band */
+.reach{background:var(--panel);color:#C9CED1;position:relative;overflow:hidden}
+.reach .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:center;padding-top:88px;padding-bottom:88px}
+.reach h2{color:var(--white);font-size:clamp(40px,5vw,72px);text-transform:uppercase;font-weight:800}
+.reach p{margin:20px 0 0;font-size:19px}
+.reach dl{margin:0;display:grid;gap:18px}
+.reach dt{font-size:14px;color:#8F999F}
+.reach dd{margin:2px 0 0;font:700 30px/1.1 var(--display);color:var(--white)}
+.reach dd a{text-decoration:none}.reach dd a:hover{text-decoration:underline}
+@media (max-width:860px){.reach .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<div class="util">
+  <div class="wrap">
+    <span><span class="flag" aria-hidden="true"></span>Made in Italy, dal 1934</span>
+    <div class="right">
+      <a class="hide-s" href="tel:+390323838211">+39 0323 838211</a>
+      <a class="hide-s" href="mailto:info@ripamonti.net">info@ripamonti.net</a>
+      <div class="lang" role="group" aria-label="Lingua">
+        <button type="button" aria-pressed="true">IT</button><button type="button" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Ripamonti, home">
+      <img class="on-light" src="assets/img/logo-ripamonti-nero.png" alt="Ripamonti" width="700" height="402">
+      <img class="on-dark" src="assets/img/logo-ripamonti-bianco.png" alt="" width="700" height="416">
+    </a>
+    <nav class="mainnav" aria-label="Menu principale">
+      <ul>
+        <li>
+          <button class="item" type="button" data-mega aria-expanded="false" aria-controls="mega-prodotti">Prodotti <span class="chev" aria-hidden="true"></span></button>
+          <div class="mega" id="mega-prodotti" hidden>
+            <div class="wrap">
+              <ul>
+                <li><a href="#"><img src="assets/img/home/cat-micropali.jpg" alt=""><span><b>Micropali e ancoraggi</b><small>Birdie, Eagle, Minimek</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-pareti.jpg" alt=""><span><b>Perforatrici per pareti</b><small>Speedy Drill, per lavori in parete e in fune</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-geotermia.jpg" alt=""><span><b>Geotermia</b><small>Georig 520, 620, 820</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-escavatore-perforatrici.jpg" alt=""><span><b>Perforatrici su escavatore</b><small>Excavator Drill ED</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-escavatore-attrezzature.jpg" alt=""><span><b>Attrezzature per escavatore</b><small>Serie EX, slitte da montare sul braccio</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-gru.jpg" alt=""><span><b>Kit di perforazione per gru</b><small>Per lavorare dove l’escavatore non arriva</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-cave.jpg" alt=""><span><b>Cave di pietra</b><small>ED Cava, RLD, serie TB</small></span></a></li>
+                <li><a href="#"><img src="assets/img/home/cat-speciali.jpg" alt=""><span><b>Applicazioni speciali</b><small>TBM e macchine su misura</small></span></a></li>
+                <li class="all"><a href="#linee">Tutte le linee di prodotto</a></li>
+              </ul>
+              <a class="feat" href="eagle-1025.html">
+                <img src="assets/img/eagle-lato.jpg" alt="">
+                <div><em>Novità</em><b>Eagle 1025</b><span>Perforatrice idraulica cingolata, anche in versione elettrica.</span></div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a class="item" href="#servizi">Noleggio e servizi</a></li>
+        <li><a class="item" href="#azienda">Azienda</a></li>
+        <li><a class="item" href="#">Rete vendita</a></li>
+        <li><a class="item" href="#">News e fiere</a></li>
+      </ul>
+      <a class="btn mobile-cta" href="#contatti">Contattaci</a>
+    </nav>
+    <a class="btn cta" href="#contatti">Contattaci</a>
+    <button class="burger" type="button" aria-expanded="false" aria-label="Apri il menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <img src="assets/img/home/hero-speedy-parete.jpg" alt="Perforatrice Speedy Drill al lavoro su una parete di roccia" fetchpriority="high">
+    <div class="wrap">
+      <h1 id="h1">Perforatrici per roccia, fondazioni e cave</h1>
+      <p class="sub">Progettiamo e costruiamo a Ornavasso macchine per micropali, ancoraggi, consolidamento di pareti, geotermia e cave di pietra.</p>
+      <div class="actions">
+        <a class="btn light" href="#linee">Scopri le macchine</a>
+        <a class="btn line light" href="#contatti">Parla con un tecnico</a>
+      </div>
+      <ul class="facts">
+        <li><b>1934</b><span>Inizio dell’attività con gli esplosivi per marmo e granito</span></li>
+        <li><b>1970</b><span>Prime attrezzature per cave e miniere</span></li>
+        <li><b>8</b><span>Linee di prodotto, dalle pareti alle gallerie</span></li>
+        <li><b>Ornavasso</b><span>Progettazione e produzione in Val d’Ossola</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="linee" aria-labelledby="t-linee">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-linee">Le nostre macchine</h2>
+        <p>Otto linee di prodotto per lavori diversi. Scegli il tipo di lavoro: trovi le macchine adatte con dati tecnici, schede e video.</p>
+      </div>
+      <ul class="lines">
+        <li><a href="eagle-1025.html"><img src="assets/img/home/cat-micropali.jpg" alt="" loading="lazy"><span class="txt"><b>Micropali e ancoraggi</b><small>Perforatrici cingolate compatte e radiocomandate.</small><span class="models">Birdie, Eagle, Minimek</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-pareti.jpg" alt="" loading="lazy"><span class="txt"><b>Perforatrici per pareti</b><small>Per consolidare pareti di roccia, anche lavorando in fune.</small><span class="models">Speedy Drill</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-geotermia.jpg" alt="" loading="lazy"><span class="txt"><b>Geotermia</b><small>Perforatrici per sonde geotermiche e pozzi.</small><span class="models">Georig 520, 620, 820</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-escavatore-perforatrici.jpg" alt="" loading="lazy"><span class="txt"><b>Perforatrici su escavatore</b><small>L’escavatore diventa una perforatrice completa.</small><span class="models">Excavator Drill ED</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-escavatore-attrezzature.jpg" alt="" loading="lazy"><span class="txt"><b>Attrezzature per escavatore</b><small>Slitte di perforazione da montare sul braccio.</small><span class="models">Serie EX</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-gru.jpg" alt="" loading="lazy"><span class="txt"><b>Kit per gru</b><small>Per perforare in quota, dove l’escavatore non arriva.</small><span class="models">Applicazioni gru</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-cave.jpg" alt="" loading="lazy"><span class="txt"><b>Cave di pietra</b><small>Perforazione e taglio a filo per marmo e granito.</small><span class="models">ED Cava, RLD, serie TB</span></span></a></li>
+        <li><a href="#"><img src="assets/img/home/cat-speciali.jpg" alt="" loading="lazy"><span class="txt"><b>Applicazioni speciali</b><small>Gallerie, TBM e macchine progettate su richiesta.</small><span class="models">Su misura</span></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="t-new">
+    <div class="wrap">
+      <figure><img src="assets/img/eagle-lato.jpg" alt="Eagle 1025 in officina, vista di lato" loading="lazy"></figure>
+      <div class="copy">
+        <span class="badge">Novità</span>
+        <h2 id="t-new">Eagle 1025</h2>
+        <p class="kind">Perforatrice idraulica cingolata per micropali e ancoraggi</p>
+        <p>Completamente radiocomandata, con slitta telescopica a corsa variabile e versione elettrica da 90 kW.</p>
+        <ul class="kpis">
+          <li><span class="ico" style="--i:url(assets/img/ico-motore.png)" aria-hidden="true"></span><span><b>127 HP</b><small>Kubota Stage V</small></span></li>
+          <li><span class="ico" style="--i:url(assets/img/ico-elettrico.png)" aria-hidden="true"></span><span><b>90 kW</b><small>Versione elettrica</small></span></li>
+          <li><span class="ico" style="--i:url(assets/img/ico-peso.png)" aria-hidden="true"></span><span><b>8,5–9,5 t</b><small>Peso</small></span></li>
+          <li><span class="ico" style="--i:url(assets/img/ico-tiro.png)" aria-hidden="true"></span><span><b>6.500 kg</b><small>Tiro e spinta</small></span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn light" href="eagle-1025.html">Vai alla scheda</a>
+          <a class="btn line light" href="eagle-1025.html#t3d">Guardala in 3D</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="servizi" aria-labelledby="t-svc">
+    <div class="wrap services">
+      <figure><img src="assets/img/home/servizi-galleria.jpg" alt="Perforatrice Ripamonti al lavoro in galleria" loading="lazy"></figure>
+      <div>
+        <div class="sec-head" style="margin-bottom:32px">
+          <h2 id="t-svc">Noleggio e assistenza</h2>
+          <p>Non solo macchine: ti seguiamo dal primo giorno di cantiere alla manutenzione.</p>
+        </div>
+        <ul class="svc">
+          <li><h3>Noleggio</h3><p>Perforatrici e attrezzature disponibili a noleggio, per lavori a tempo o per provare una macchina prima dell’acquisto.</p></li>
+          <li><h3>Avviamento e formazione</h3><p>Mettiamo in funzione la macchina in cantiere e formiamo gli operatori al suo utilizzo.</p></li>
+          <li><h3>Riparazione martelli fondo-foro</h3><p>Revisione e riparazione dei martelli DTH nella nostra officina.</p></li>
+          <li><h3>Riaffilatura bottoni</h3><p>Riaffilatura delle punte a bottoni per riportarle all’efficienza di taglio.</p></li>
+        </ul>
+        <a class="btn line more" href="#">Tutti i servizi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="azienda" aria-labelledby="t-az">
+    <div class="wrap history">
+      <figure><img src="assets/img/home/azienda-cava.jpg" alt="Perforatrice Ripamonti in una cava di marmo" loading="lazy"></figure>
+      <div>
+        <h2 id="t-az">Dal 1934, nati in cava</h2>
+        <p>Siamo nati in cava, tra marmo e granito. Da lì viene il nostro modo di costruire macchine: pensate per chi le usa ogni giorno, in condizioni difficili.</p>
+        <ol class="timeline">
+          <li><b>1934</b><p>L’attività inizia con l’uso degli esplosivi nelle cave di marmo e granito.</p></li>
+          <li><b>1970</b><p>Iniziamo a fornire attrezzature per cave e miniere.</p></li>
+          <li><b>Oggi</b><p>Progettiamo e costruiamo perforatrici nostre, vendute in Italia e all’estero, e distribuiamo i migliori marchi del settore.</p></li>
+        </ol>
+        <a class="btn" href="#">La nostra storia</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands" aria-labelledby="t-brands">
+    <div class="wrap">
+      <h2 id="t-brands">Distribuiamo anche</h2>
+      <ul>
+        <li>Wassara</li><li>Numa</li><li>Mincon</li><li>Mitsubishi</li><li>Eurodrill</li><li>Doofor</li><li>Darda</li><li>Furukawa</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reach" id="contatti" aria-labelledby="t-reach">
+    <div class="wrap">
+      <div>
+        <h2 id="t-reach">Hai un lavoro da fare?</h2>
+        <p>Raccontaci il cantiere: ti consigliamo la macchina giusta, da acquistare o a noleggio.</p>
+        <p style="margin-top:28px"><a class="btn light" href="mailto:info@ripamonti.net">Scrivici</a></p>
+      </div>
+      <dl>
+        <div><dt>Telefono</dt><dd><a href="tel:+390323838211">+39 0323 838211</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@ripamonti.net">info@ripamonti.net</a></dd></div>
+        <div><dt>Sede</dt><dd>Strada Romana di Sotto 27, Ornavasso (VB)</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="assets/img/logo-ripamonti-bianco.png" alt="Ripamonti" width="700" height="416">
+        <p>Ripamonti Dr. Gianni Srl<br>Strada Romana di Sotto 27<br>28877 Ornavasso (VB), Italia</p>
+      </div>
+      <div>
+        <h2>Prodotti</h2>
+        <ul>
+          <li><a href="eagle-1025.html">Micropali e ancoraggi</a></li>
+          <li><a href="#">Perforatrici per pareti</a></li>
+          <li><a href="#">Geotermia</a></li>
+          <li><a href="#">Perforatrici su escavatore</a></li>
+          <li><a href="#">Attrezzature per escavatore</a></li>
+          <li><a href="#">Kit per gru</a></li>
+          <li><a href="#">Cave di pietra</a></li>
+          <li><a href="#">Applicazioni speciali</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Azienda</h2>
+        <ul>
+          <li><a href="#azienda">Chi siamo</a></li>
+          <li><a href="#servizi">Noleggio e servizi</a></li>
+          <li><a href="#">Rete vendita</a></li>
+          <li><a href="#">News e fiere</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contatti</h2>
+        <ul>
+          <li><a href="tel:+390323838211">+39 0323 838211</a></li>
+          <li><a href="mailto:info@ripamonti.net">info@ripamonti.net</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Ripamonti Dr. Gianni Srl</span>
+      <span><a href="#">Privacy</a> – <a href="#">Cookie</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

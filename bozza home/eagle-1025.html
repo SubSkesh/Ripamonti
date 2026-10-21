@@ -15,21 +15,22 @@
 .crumbs{border-bottom:1px solid var(--rule)}
 .crumbs ol{list-style:none;margin:0;padding:14px 0;display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:4px 0;font-size:14px;color:var(--muted)}
 .crumbs li{white-space:nowrap}
+@media (max-width:480px){.crumbs li:first-child{display:none}.crumbs li:nth-child(2)::before{display:none}}
 .crumbs li+li::before{content:"/";margin:0 10px;color:var(--ral7001)}
 .crumbs a{text-decoration:none}.crumbs a:hover{color:var(--heading);text-decoration:underline;text-underline-offset:3px}
 .crumbs [aria-current]{color:var(--heading);font-weight:600}
 
 /* hero: dark panel + portrait photo */
 .p-hero{background:var(--black);color:#C9CED1}
-.p-hero .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);min-height:min(78vh,760px)}
-.p-hero .copy{display:flex;flex-direction:column;justify-content:flex-end;padding:48px clamp(28px,4vw,64px) 0 max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)))}
+.p-hero .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);min-height:clamp(560px,calc(100svh - 180px),760px)}
+.p-hero .copy{display:flex;flex-direction:column;justify-content:flex-end;padding:32px clamp(28px,4vw,64px) 0 max(var(--gut),calc((100vw - var(--wrap))/2 + var(--gut)))}
 .p-hero h1{color:var(--white);text-transform:uppercase;font-weight:800;font-size:clamp(64px,8vw,118px);line-height:.86;letter-spacing:-.01em}
 .p-hero h1 span{display:block;color:var(--ral7001)}
 .p-hero .kind{font:600 clamp(22px,2.2vw,28px)/1.15 var(--display);color:var(--white);margin:18px 0 12px;text-transform:uppercase;letter-spacing:.02em}
 .p-hero .lead{font-size:clamp(17px,1.4vw,19px);max-width:46ch;margin:0 0 32px}
 .p-hero .actions{display:flex;flex-wrap:wrap;gap:12px}
 .p-hero figure{margin:0;position:relative;overflow:hidden;background:var(--ral7021)}
-.p-hero figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.p-hero figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 78%}
 .keyspecs{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.28)}
 .keyspecs li{display:flex;flex-direction:column;gap:14px;padding:22px 20px 30px 0}
 .keyspecs li+li{padding-left:20px;border-left:1px solid rgba(255,255,255,.18)}
@@ -39,7 +40,7 @@
 @media (max-width:960px){
   .p-hero .grid{grid-template-columns:1fr;min-height:0}
   .p-hero figure{order:-1;aspect-ratio:4/3}
-  .p-hero figure img{object-position:50% 60%}
+  .p-hero figure img{object-position:50% 88%}
   .p-hero .copy{padding:44px var(--gut) 0}
 }
 @media (max-width:640px){
@@ -175,7 +176,7 @@ model-viewer[loaded]+.loading{display:none}
 .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px;margin-top:14px}
 .gallery button{all:unset;display:block;cursor:zoom-in;overflow:hidden;background:var(--ral7021);aspect-ratio:3/4}
 .gallery button:first-child{aspect-ratio:auto;position:relative}
-.gallery button:first-child img{position:absolute;inset:0}
+.gallery button:first-child img{position:absolute;inset:0;object-position:50% 85%}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .gallery button:hover img{transform:scale(1.035)}
 .gallery button:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
@@ -302,7 +303,7 @@ model-viewer[loaded]+.loading{display:none}
         <ul class="keyspecs" aria-label="Dati principali">
           <li><span class="ico" style="--i:url(assets/img/ico-motore.png)" aria-hidden="true"></span><span><b>127 HP</b><small>Motore Kubota Stage V</small></span></li>
           <li><span class="ico" style="--i:url(assets/img/ico-elettrico.png)" aria-hidden="true"></span><span><b>90 kW</b><small>Versione elettrica</small></span></li>
-          <li><span class="ico" style="--i:url(assets/img/ico-peso.png)" aria-hidden="true"></span><span><b>8,5–9,5 t</b><small>Peso, secondo gli accessori</small></span></li>
+          <li><span class="ico" style="--i:url(assets/img/ico-peso.png)" aria-hidden="true"></span><span><b>8,5–9,5 t</b><small>Peso</small></span></li>
           <li><span class="ico" style="--i:url(assets/img/ico-tiro.png)" aria-hidden="true"></span><span><b>6.500 kg</b><small>Tiro e spinta</small></span></li>
         </ul>
       </div>
