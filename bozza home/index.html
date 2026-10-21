@@ -101,12 +101,15 @@
 .timeline p{margin:0}
 @media (max-width:900px){.history{grid-template-columns:1fr}.history figure img{aspect-ratio:4/3;height:auto}}
 
-/* brands */
-.brands{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:36px 0}
-.brands .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:18px 44px}
-.brands h2{font:600 17px var(--body);color:var(--muted);margin-right:12px}
-.brands ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 40px}
-.brands li{font:700 26px/1 var(--display);color:var(--ral7001);text-transform:uppercase;letter-spacing:.03em}
+/* brands: logos kept in greyscale so the page stays on the official palette; colour returns on hover */
+.brands{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:44px 0 48px}
+.brands h2{font:600 17px var(--body);color:var(--muted);margin:0 0 20px}
+.brands ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.brands li{display:flex;align-items:center;justify-content:center;height:96px;padding:0 18px;background:var(--white)}
+.brands img{max-width:100%;max-height:36px;width:auto;height:auto;filter:grayscale(1) contrast(1.1);opacity:.78;transition:filter .2s,opacity .2s}
+.brands li:hover img{filter:none;opacity:1}
+@media (max-width:1000px){.brands ul{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:640px){.brands ul{grid-template-columns:repeat(2,1fr)}.brands li{height:80px}}
 
 /* contact band */
 .reach{background:var(--panel);color:#C9CED1;position:relative;overflow:hidden}
@@ -277,7 +280,18 @@
     <div class="wrap">
       <h2 id="t-brands">Distribuiamo anche</h2>
       <ul>
-        <li>Wassara</li><li>Numa</li><li>Mincon</li><li>Mitsubishi</li><li>Eurodrill</li><li>Doofor</li><li>Darda</li><li>Furukawa</li>
+        <li><img src="assets/img/brands/wassara.png" alt="Wassara" width="180" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/numa.png" alt="Numa" width="180" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/mitsubishi.png" alt="Mitsubishi Materials" width="345" height="42" loading="lazy"></li>
+        <li><img src="assets/img/brands/eurodrill.png" alt="Eurodrill" width="151" height="39" loading="lazy"></li>
+        <li><img src="assets/img/brands/furukawa.png" alt="FRD Furukawa" width="180" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/darda.png" alt="Darda" width="180" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/driconeq.png" alt="Driconeq" width="151" height="39" loading="lazy"></li>
+        <li><img src="assets/img/brands/stratum.png" alt="Stratum Drilling Solutions" width="130" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/crm.jpg" alt="CRM Jetting" width="130" height="25" loading="lazy"></li>
+        <li><img src="assets/img/brands/italswiss.jpg" alt="Italswiss" width="111" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/powerking.png" alt="Powerking" width="180" height="35" loading="lazy"></li>
+        <li><img src="assets/img/brands/mr-star.png" alt="Mr. Star" width="180" height="35" loading="lazy"></li>
       </ul>
     </div>
   </section>
