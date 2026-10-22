@@ -145,3 +145,22 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .site-foot .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #2A2D2F;margin-top:48px;padding-top:22px;font-size:13px;color:#7C858A}
 @media (max-width:900px){.site-foot .cols{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.site-foot .cols{grid-template-columns:1fr}}
+
+/* motion – content is visible by default. html.m (set in <head>) arms the entrance states and
+   site.js adds .in as elements reach the viewport. The headline wipe reuses the brochure's slanted cut. */
+@media (prefers-reduced-motion:no-preference){
+  .m :is(.hero h1,.p-hero h1,.p-hero figure,.sec-head h2,.viewer h2,.vs h2,.reach h2,.feature h2,.history h2):not(.in){clip-path:polygon(-10% -25%,-10% -25%,-22% 125%,-22% 125%)}
+  .m :is(.hero h1,.p-hero h1,.p-hero figure,.sec-head h2,.viewer h2,.vs h2,.reach h2,.feature h2,.history h2){clip-path:polygon(-10% -25%,122% -25%,110% 125%,-22% 125%);transition:clip-path .95s cubic-bezier(.16,1,.3,1) var(--d,0ms)}
+  .m :is(.hero .sub,.hero .actions,.p-hero .kind,.p-hero .lead,.p-hero .actions,.feature .kind,.reach .intro,.sec-head p,
+         .facts>li,.keyspecs>li,.kpis>li,.lines>li,.svc>li,.opts>li,.keydims>li,.timeline>li,.hs-list>li,.brands li){transition:opacity .6s cubic-bezier(.16,1,.3,1) var(--d,0ms),transform .6s cubic-bezier(.16,1,.3,1) var(--d,0ms)}
+  .m :is(.hero .sub,.hero .actions,.p-hero .kind,.p-hero .lead,.p-hero .actions,.feature .kind,.reach .intro,.sec-head p,
+         .facts>li,.keyspecs>li,.kpis>li,.lines>li,.svc>li,.opts>li,.keydims>li,.timeline>li,.hs-list>li,.brands li):not(.in){opacity:0;transform:translateY(18px)}
+
+  /* feedback: menus and tab panels arrive instead of popping */
+  .mega:not([hidden]){animation:drop-in .24s cubic-bezier(.16,1,.3,1)}
+  [role=tabpanel]:not([hidden]){animation:panel-in .3s cubic-bezier(.16,1,.3,1)}
+  .btn{transition:background-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+  .btn:active{transform:translateY(1px)}
+}
+@keyframes drop-in{from{opacity:0;transform:translateY(-8px)}}
+@keyframes panel-in{from{opacity:0;transform:translateY(8px)}}
