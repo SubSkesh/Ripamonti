@@ -53,10 +53,13 @@ function readCookie(request, name) {
   return null;
 }
 
+// values pasted into the Cloudflare dashboard often carry a stray space or newline
+const clean = (v) => String(v || '').trim();
+
 function checkCredentials(user, pass, env) {
   // evaluate both comparisons so a wrong ID and a wrong password take the same time
-  const u = safeEqual(user || '', env.BASIC_AUTH_USER);
-  const p = safeEqual(pass || '', env.BASIC_AUTH_PASS);
+  const u = safeEqual(clean(user).toLowerCase(), clean(env.BASIC_AUTH_USER).toLowerCase());
+  const p = safeEqual(clean(pass), clean(env.BASIC_AUTH_PASS));
   return u && p;
 }
 
@@ -121,8 +124,9 @@ ${error ? '<p class="err" role="alert">ID o password non corretti. Controlla e r
 
 export async function onRequest({ request, env, next }) {
   const url = new URL(request.url);
-  const configured = env.BASIC_AUTH_USER && env.BASIC_AUTH_PASS;
-  const secret = env.AUTH_SECRET || env.BASIC_AUTH_PASS || '';
+  const configured = clean(env.BASIC_AUTH_USER) && clean(env.BASIC_AUTH_PASS);
+  const secret = clean(env.AUTH_SECRET) || clean(env.BASIC_AUTH_PASS);
+  const userId = clean(env.BASIC_AUTH_USER).toLowerCase();
 
   if (url.pathname === '/login') {
     if (request.method === 'POST') {
@@ -131,10 +135,11 @@ export async function onRequest({ request, env, next }) {
       const target = safeNext(form.get('next'));
       // fail closed: without configured credentials nobody gets in
       if (configured && checkCredentials(form.get('user'), form.get('pass'), env)) {
-        const token = await makeToken(env.BASIC_AUTH_USER, secret);
+        const token = await makeToken(userId, secret);
         return redirect(target, `${COOKIE}=${token}; Path=/; Max-Age=${MAX_AGE}; HttpOnly; Secure; SameSite=Lax`);
       }
-      return redirect(`/login?e=1&next=${encodeURIComponent(target)}`);
+      // e=1 wrong ID or password; e=0 credentials not configured on this deployment
+      return redirect(`/login?e=${configured ? 1 : 0}&next=${encodeURIComponent(target)}`);
     }
     return loginPage(safeNext(url.searchParams.get('next')), url.searchParams.has('e'));
   }
@@ -145,7 +150,7 @@ export async function onRequest({ request, env, next }) {
 
   if (PUBLIC.some((re) => re.test(url.pathname))) return noindex(await next());
 
-  if (configured && (await validToken(readCookie(request, COOKIE), env.BASIC_AUTH_USER, secret))) {
+  if (configured && (await validToken(readCookie(request, COOKIE), userId, secret))) {
     return noindex(await next());
   }
 
