@@ -122,8 +122,18 @@ ${error ? '<p class="err" role="alert">ID o password non corretti. Controlla e r
   });
 }
 
+// the draft lives on the OC Software subdomain; the default pages.dev address forwards there.
+// Preview deployments (<hash>.ripamonti.pages.dev) stay reachable for testing.
+const CANONICAL = 'ripamonti.ocsw.it';
+const LEGACY = 'ripamonti.pages.dev';
+
 export async function onRequest({ request, env, next }) {
   const url = new URL(request.url);
+  if (url.hostname === LEGACY) {
+    url.hostname = env.CANONICAL_HOST || CANONICAL;
+    // 308 keeps the method, so a login form still posting to pages.dev keeps working
+    return new Response(null, { status: 308, headers: { Location: url.toString(), 'X-Robots-Tag': 'noindex' } });
+  }
   const configured = clean(env.BASIC_AUTH_USER) && clean(env.BASIC_AUTH_PASS);
   const secret = clean(env.AUTH_SECRET) || clean(env.BASIC_AUTH_PASS);
   const userId = clean(env.BASIC_AUTH_USER).toLowerCase();
